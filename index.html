@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijith B | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#1e293b',
+                            accent: '#10b981',
+                            text: '#e2e8f0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: #e2e8f0; }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-accent">ABHIJITH B</a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="#about" class="hover:text-brand-accent transition">About</a>
+                <a href="#skills" class="hover:text-brand-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-accent transition">Projects</a>
+                <a href="#experience" class="hover:text-brand-accent transition">Experience</a>
+                <a href="#contact" class="hover:text-brand-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div class="absolute right-10 top-20 w-72 h-72 bg-brand-accent rounded-full filter blur-[100px]"></div>
+            <div class="absolute left-10 bottom-20 w-72 h-72 bg-brand-accent rounded-full filter blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center z-10">
+            <img
+                id="profilePhoto"
+                src="profile.png"
+                alt="Abhijith B"
+                class="mx-auto mb-6 h-28 w-28 md:h-36 md:w-36 rounded-full object-cover ring-2 ring-brand-accent/70 shadow-lg"
+                onerror="this.classList.add('hidden'); document.getElementById('profileFallback').classList.remove('hidden');"
+            />
+            <div
+                id="profileFallback"
+                class="hidden mx-auto mb-6 h-28 w-28 md:h-36 md:w-36 rounded-full glass-card flex items-center justify-center ring-2 ring-brand-accent/70"
+                aria-hidden="true"
+            >
+                <span class="text-2xl md:text-3xl font-bold text-white">AB</span>
+            </div>
+            <p class="text-brand-accent font-mono mb-4">Hello, I am</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight">Abhijith B.</h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 font-semibold">Computer Science Student | Full Stack | AI/ML</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+                Adaptable Computer Science student skilled in Java, Python, web development, and core CS concepts like DSA, DBMS,
+                and AI/ML, with hands-on project experience and a strong drive to learn and contribute to real-world challenges.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-brand-accent text-brand-dark font-bold rounded hover:bg-emerald-400 transition">View Projects</a>
+                <a href="#contact" class="px-8 py-3 border border-brand-accent text-brand-accent font-bold rounded hover:bg-brand-accent/10 transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="py-20 bg-brand-light/30">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-white flex items-center">
+                    <span class="text-brand-accent mr-2">01.</span> About & Education
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="mb-6 text-gray-300">
+                            Adaptable Computer Science student skilled in Java, Python, web development, and core CS concepts like DSA,
+                            DBMS, and AI/ML, with hands-on project experience and a strong drive to learn and contribute to real-world
+                            challenges.
+                        </p>
+                        <p class="mb-6 text-gray-300">
+                            Founder and co-ordinator of Anonymous Cybersecurity Club in SDMCET and conducted various events and hands on
+                            sessions to educate students in the world of Cybersecurity.
+                        </p>
+                        <div class="flex gap-4 mt-6">
+                            <a href="#" class="text-2xl hover:text-brand-accent" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="text-2xl hover:text-brand-accent" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="border-l-2 border-gray-700 pl-8 space-y-8">
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-brand-accent border-4 border-brand-dark"></span>
+                            <h3 class="text-xl font-bold text-white">SDM College Of Engineering And Technology, Dharwad</h3>
+                            <p class="text-brand-accent text-sm">2022 - 2026</p>
+                            <p class="text-gray-400 text-sm mt-1">Bachelors in Computer Science and Engineering — CGPA: 7.95</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-gray-600 border-4 border-brand-dark"></span>
+                            <h3 class="text-xl font-bold text-white">Vishwajyothi PU College, Siruguppa, Bellary</h3>
+                            <p class="text-brand-accent text-sm">2020 - 2022</p>
+                            <p class="text-gray-400 text-sm mt-1">Pre-university education — Percentage: 88.6%</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-gray-600 border-4 border-brand-dark"></span>
+                            <h3 class="text-xl font-bold text-white">Vishwajyothi International Public School, Siruguppa, Bellary</h3>
+                            <p class="text-brand-accent text-sm">2008 - 2020</p>
+                            <p class="text-gray-400 text-sm mt-1">Secondary Education (ICSE) — Percentage: 78.8%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-white flex items-center">
+                    <span class="text-brand-accent mr-2">02.</span> Skills
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Programming Languages</h3>
+                        <p class="text-gray-300">Java, Python, Kotlin, Go, C</p>
+                    </div>
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Web Development</h3>
+                        <p class="text-gray-300">HTML, CSS, JavaScript, React, MongoDB</p>
+                    </div>
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Frameworks and Tools</h3>
+                        <p class="text-gray-300">GitHub (basic git commands), Jira, Cisco packet tracer, VS Code</p>
+                    </div>
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Concepts</h3>
+                        <p class="text-gray-300">
+                            OOP concepts, Data Structures and Algorithms, DBMS, Artificial Intelligence and Machine Learning, Data Science,
+                            Internet of Things, Computer networks
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-brand-light/30">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-white flex items-center">
+                    <span class="text-brand-accent mr-2">03.</span> Projects
+                </h2>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <article class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Blockchain based decentralized voting system</h3>
+                        <p class="text-sm text-brand-accent mb-4">Truffle • Ganache • MetaMask • Ethereum smart contracts</p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Built a blockchain-based voting system using Truffle, Ganache, MetaMask and Ethereum smart contracts.</li>
+                            <li>Implemented unique cryptographic voter identities.</li>
+                            <li>Boosted data integrity and tamper resistance by 90% through decentralized ledger architecture.</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Resume Analyzer using NLP</h3>
+                        <p class="text-sm text-brand-accent mb-4">NLP • Text preprocessing • Semantic matching</p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Built an AI-powered Resume Analyzer using NLP to extract, evaluate, and score candidate resumes.</li>
+                            <li>Scored based on skills, keywords, and job relevance.</li>
+                            <li>Implemented text preprocessing and semantic matching to deliver automated candidate insights.</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Fake Pop-up Detection System using Neural networks</h3>
+                        <p class="text-sm text-brand-accent mb-4">Python • OpenCV • TensorFlow/Keras • Tkinter</p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Built a neural-network-powered desktop app to detect fake pop-ups and QR codes.</li>
+                            <li>Achieved ~90% classification accuracy with real-time warnings.</li>
+                            <li>Improved user safety by detecting deceptive content quickly.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-white flex items-center">
+                    <span class="text-brand-accent mr-2">04.</span> Work Experience (Freelancer)
+                </h2>
+
+                <div class="grid lg:grid-cols-2 gap-6 mb-10">
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white">Anonymous website</h3>
+                        <p class="text-brand-accent text-sm mt-1">Domain: Full Stack Development, Artificial Intelligence and Machine Learning</p>
+                        <p class="text-gray-300 mt-4">
+                            Worked on real-time projects, including research on building an OCR model and contributing as a member of the
+                            development team.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white">Rakshak</h3>
+                        <p class="text-brand-accent text-sm mt-1">Domain: Mobile Application Development</p>
+                        <p class="text-gray-300 mt-4">
+                            Developed Rakshak, a fully functional cross-platform app for iOS and Android, focusing on real-time features,
+                            user safety workflows, and smooth UI/UX performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Certifications</h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Software Design and Development: Object-oriented Analysis and Design — Infosys Springboard</li>
+                            <li>Introduction to MongoDB (For Students)</li>
+                            <li>HTML Language Certification — Infosys Springboard</li>
+                            <li>Agamya Cyber Tech Summit Hackathon Participation Certificate (Won)</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-white mb-3">Additional Information</h3>
+                        <p class="text-gray-300 mb-3"><span class="text-white font-semibold">Interests:</span> Musical instruments, Singing, Reading books, etc.</p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Volunteer in Insignia (Inter-college Cultural fest) and participated in events held by college.</li>
+                            <li>Participated in the National Level South Zone Women’s Badminton Tournament.</li>
+                            <li>Volunteered in guiding students to score well in competitive exams like NMMS by teaching and solving problems.</li>
+                            <li>Interacted with a Forest Department officer and planted trees in college premises.</li>
+                            <li>Founder and co-ordinator of Anonymous Cybersecurity Club in SDMCET; conducted events and hands on sessions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-brand-light/30">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-white flex items-center">
+                    <span class="text-brand-accent mr-2">05.</span> Contact
+                </h2>
+
+                <div class="glass-card rounded-lg p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Let’s connect</h3>
+                        <p class="text-gray-300 max-w-2xl">
+                            Add your email / LinkedIn / GitHub links and I’ll update these buttons.
+                        </p>
+                    </div>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="#" class="hover:text-brand-accent" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="hover:text-brand-accent" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:abhijithappuuu@gmail.com" class="hover:text-brand-accent" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-sm text-gray-400">
+                    Email: <a class="text-brand-accent hover:underline" href="mailto:abhijithappuuu@gmail.com">abhijithappuuu@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 text-center text-sm text-gray-500">
+        <p>© <span id="year"></span> Abhijith B. Built with HTML + Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
