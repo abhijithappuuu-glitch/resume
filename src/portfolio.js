@@ -284,7 +284,7 @@ const degrees = {
     {
       title: "SDM College of Engineering and Technology",
       subtitle: "Bachelor of Engineering in Computer Science Engineering",
-      logo_path: "iiitk_logo.png", // Replace with appropriate logo if available
+      logo_path: "sdmcet_logo.avif",
       alt_name: "SDMCET",
       duration: "2022 - Present",
       descriptions: [
@@ -295,7 +295,7 @@ const degrees = {
     {
       title: "Vishwajyothi PU College",
       subtitle: "PCMB",
-      logo_path: "iiitk_logo.png",
+      logo_path: "vishwajyothi_logo.jpg",
       alt_name: "Vishwajyothi PU College",
       duration: "2020 - 2022",
       descriptions: ["⚡ Completed Pre-University education."],
@@ -304,7 +304,7 @@ const degrees = {
     {
       title: "Vishwajyothi International Public School",
       subtitle: "ICSE",
-      logo_path: "iiitk_logo.png",
+      logo_path: "vishwajyothi_logo.jpg",
       alt_name: "Vishwajyothi International Public School",
       duration: "2008 - 2020",
       descriptions: ["⚡ Completed schooling."],
@@ -366,7 +366,7 @@ const experience = {
           title: "Software Development Intern",
           company: "Algoarn Technologies",
           company_url: "#",
-          logo_path: "google_logo.png", // Replace
+          logo_path: "pwa.png", // Replace
           duration: "Current",
           location: "India",
           description:
@@ -377,7 +377,7 @@ const experience = {
           title: "Freelance",
           company: "Self-Employed",
           company_url: "#",
-          logo_path: "google_logo.png", // Replace
+          logo_path: "pwa.png", // Replace
           duration: "Past",
           location: "Remote",
           description:
