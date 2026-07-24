@@ -25,8 +25,8 @@ const greeting = {
   subTitle:
     "Computer Science Engineering Student | Full Stack Developer | AI/ML Enthusiast | Cybersecurity Researcher",
   resumeLink: "/Abhijith_B_Resume.pdf",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio", // Adjust if needed
-  githubProfile: "https://github.com", // Add your Github Link
+  portfolio_repository: "https://github.com/abhijithappuuu-glitch/resume", // Adjust if needed
+  githubProfile: "https://github.com/abhijithappuuu-glitch", // Add your Github Link
 };
 
 const socialMediaLinks = [

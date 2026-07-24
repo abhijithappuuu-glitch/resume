@@ -25,16 +25,11 @@ class Header extends Component {
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
-              <img
-                src={require("../../assets/images/abhijith_profile.jpg")}
-                alt="Abhijith Logo"
-                style={{
-                  width: "50px",
-                  height: "auto",
-                  borderRadius: "50%",
-                  display: "block",
-                }}
-              />
+              <span style={{ color: theme.text }}> &lt;</span>
+              <span className="logo-name" style={{ color: theme.text }}>
+                {greeting.logo_name}
+              </span>
+              <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
