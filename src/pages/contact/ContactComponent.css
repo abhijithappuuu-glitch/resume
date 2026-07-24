@@ -55,9 +55,15 @@
   text-align: center;
 }
 
-.contact-heading-img-div > * {
-  max-width: 100%;
+.contact-heading-img-div img {
+  width: 258px;
   height: auto;
+  max-width: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  display: block;
 }
 
 .blog-heading-img-div > * {
